@@ -16,6 +16,7 @@ export interface NavLink {
   order: number;
   sidebarOrder?: number;
   sidebarVisible?: boolean;
+  download: boolean;
 }
 
 const navLinks: NavLink[] = [
@@ -26,6 +27,7 @@ const navLinks: NavLink[] = [
     label: 'O mně',
     order: 1,
     sidebarVisible: false,
+    download: false
   },
   {
     buttonProps: { color: 'info' },
@@ -34,6 +36,7 @@ const navLinks: NavLink[] = [
     label: 'Portfolio',
     order: 2,
     sidebarVisible: false,
+    download: false
   },
   {
     buttonProps: { color: 'info' },
@@ -43,7 +46,18 @@ const navLinks: NavLink[] = [
     order: 3,
     sidebarOrder: 2,
     sidebarVisible: true,
+    download: false
   },
+  // {
+  //   buttonProps: { color: 'info' },
+  //   href: "/docs/Zaneta_Sabadkova_CV.pdf",
+  //   Icon: <WorkIcon color="inherit" fontSize="inherit" />,
+  //   label: 'stáhnout životopis',
+  //   order: 4,
+  //   sidebarOrder: 3,
+  //   sidebarVisible: true,
+  //   download: true
+  // },
   // {
   //   buttonProps: { color: 'info', variant: 'contained' },
   //   href: '/projects',
@@ -53,15 +67,15 @@ const navLinks: NavLink[] = [
   //   sidebarOrder: 1,
   //   sidebarVisible: true,
   // },
-  {
-    buttonProps: { color: 'info', variant: 'outlined' },
-    href: '/Portfolio',
-    Icon: <WorkIcon color="inherit" fontSize="inherit" />,
-    label: 'Zkouska',
-    order: 4,
-    sidebarOrder: 3,
-    sidebarVisible: true,
-  },
+  // {
+  //   buttonProps: { color: 'info', variant: 'outlined' },
+  //   href: '/Portfolio',
+  //   Icon: <WorkIcon color="inherit" fontSize="inherit" />,
+  //   label: 'Zkouska',
+  //   order: 4,
+  //   sidebarOrder: 3,
+  //   sidebarVisible: true,
+  // },
 ];
 
 export default navLinks;

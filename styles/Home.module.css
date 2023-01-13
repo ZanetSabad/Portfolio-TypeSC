@@ -1,0 +1,13 @@
+.myImg{
+    width: 100vw;
+    height: 100vh;
+    border-radius: 10px;
+    background-image: url(../public/images/ja.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-attachment: fixed;
+    box-shadow: 10px 10px 15px black;
+    border-radius: 10px;
+  }
+  

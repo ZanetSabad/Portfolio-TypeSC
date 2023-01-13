@@ -3,11 +3,12 @@ import * as React from 'react';
 // next
 import Head from 'next/head';
 // custom component
+import CustomAppBar from '../common/CustomAppBar';
 // import CustomAppBar from 'components/common/CustomAppBar';
 // import Footer from 'components/section/Footer';
 
 // type
-import { Page } from '../constants/pages';
+import { Page } from '../../constants/pages';
 interface MainLayoutProps {
   pageData?: Page;
   children?: any;
@@ -26,7 +27,7 @@ const MainLayout: React.FunctionComponent<MainLayoutProps> = (props) => {
           )}
         </Head>
       )}
-      {/* <CustomAppBar /> */}
+      <CustomAppBar />
       {children}
       {/* <Footer /> */}
     </>

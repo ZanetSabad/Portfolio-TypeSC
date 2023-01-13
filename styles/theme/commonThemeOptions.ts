@@ -10,6 +10,27 @@ const commonThemeOptions: ThemeOptions = {
         },
       },
     },
+    MuiContainer: {
+      styleOverrides: {
+        root: {
+          margin: 0,
+        },     
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        text: {
+            fontSize: "20px",
+        },
+      },
+    },
+    // MuiLink: {
+    //   styleOverrides: {
+    //     root: {
+    //       underline: "none",
+    //     }
+    //   }
+    // }
   },
 };
 

@@ -27,7 +27,7 @@ const lightTheme = createTheme({
       contrastText: '#FF6347',
     },
     background: {
-      default: '#f2f2f2',
+      default: 'white',
       paper: '#fff',
     },
     text: {
