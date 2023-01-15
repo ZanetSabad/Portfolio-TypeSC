@@ -24,13 +24,6 @@ const commonThemeOptions: ThemeOptions = {
         },
       },
     },
-    // MuiLink: {
-    //   styleOverrides: {
-    //     root: {
-    //       underline: "none",
-    //     }
-    //   }
-    // }
   },
 };
 

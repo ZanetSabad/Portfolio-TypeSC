@@ -3,7 +3,7 @@ import * as React from 'react';
 // next
 import Link from 'next/link';
 // custom component
-import CustomButton from 'components/common/CustomButton';
+import CustomButton from './CustomButton';
 // type
 import { ButtonProps } from '@mui/material';
 interface ButtonLinkProps extends ButtonProps {

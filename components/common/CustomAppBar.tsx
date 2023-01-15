@@ -22,7 +22,7 @@ import {
 // custom component
 // import NameLogo from 'components/common/NameLogo';
 import ButtonLink from './ButtonLink';
-import ButtonDownload from "./ButtonDownload"
+import LinkDownload from "./LinkDownload"
 // import MenuToggler from 'components/common/MenuToggler';
 import ConstantsContext from '../../context/constantsContext';
 import useOnClickOutside from '../../hooks/useOnClickOutside';
@@ -116,7 +116,7 @@ const CustomAppBar: React.FunctionComponent<CustomAppBarProps> = (props) => {
                     {NavLink.label}
                   </ButtonLink>
                 ))}
-                <ButtonDownload />
+                <LinkDownload />
               </LinksBox>
               {/* <MenuToggler
                 color="info"
