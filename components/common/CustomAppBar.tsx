@@ -22,11 +22,13 @@ import {
 // custom component
 // import NameLogo from 'components/common/NameLogo';
 import ButtonLink from './ButtonLink';
+import ButtonIcon from './ButtonIcon';
 import LinkDownload from "./LinkDownload"
 // import MenuToggler from 'components/common/MenuToggler';
 import ConstantsContext from '../../context/constantsContext';
 import useOnClickOutside from '../../hooks/useOnClickOutside';
 import ComponentsContext from '../../context/componentsContext';
+// import FacebookIconLink from './FacebookIconLink';
 // import Projects from 'pages/projects';
 // type
 interface CustomAppBarProps {}
@@ -54,6 +56,10 @@ const LinksBox = styled(Box)<BoxProps>(({ theme }) => ({
   },
 }));
 
+const IconBox = styled(Box)<BoxProps>(({theme}) => ({
+  textAlign: "center"
+}))
+
 const CustomToolbar = styled(Toolbar)<ToolbarProps>(({ theme }) => ({
   [theme.breakpoints.down('md')]: {
     padding: 0,
@@ -65,6 +71,8 @@ const CustomAppBar: React.FunctionComponent<CustomAppBarProps> = (props) => {
   const { containerMaxWidth = 'lg' } = React.useContext(ComponentsContext);
   const { navLinks } = React.useContext(ConstantsContext);
   navLinks?.sort((a, b) => (a.order > b.order ? 1 : -1));
+  const { iconLinks } = React.useContext(ConstantsContext);
+  iconLinks?.sort((a, b) => (a.order > b.order ? 1 : -1));
 
   const appBarRef = React.useRef(null);
   const handleClickOutside = () => {
@@ -117,6 +125,18 @@ const CustomAppBar: React.FunctionComponent<CustomAppBarProps> = (props) => {
                   </ButtonLink>
                 ))}
                 <LinkDownload />
+
+                <IconBox> 
+                {iconLinks?.map((IconLink, index) => (
+                  <ButtonIcon
+                    key={IconLink.href}
+                    href={IconLink.href}
+                  >
+                    {IconLink.Icon}
+                  </ButtonIcon>
+                ))}
+              
+                </IconBox>
               </LinksBox>
               {/* <MenuToggler
                 color="info"
@@ -127,7 +147,7 @@ const CustomAppBar: React.FunctionComponent<CustomAppBarProps> = (props) => {
             </LinkContainer>
           {/* </CustomToolbar> */}
         </Container>
-        <Box
+        {/* <Box
           sx={{
             backgroundColor: "transparent",
             margin: 0,
@@ -164,15 +184,15 @@ const CustomAppBar: React.FunctionComponent<CustomAppBarProps> = (props) => {
                         minWidth: '2rem',
                       }}
                     >
-                      {NavLink.Icon}
-                    </ListItemIcon>
+                      {/* {NavLink.Icon} */}
+                    {/* </ListItemIcon>
                     <ListItemText primary={NavLink.label} />
                   </ListItemButton>
                 </Grow>
               ))}
             </List>
           </Container>
-        </Box>
+        </Box>  */}
       </CustomAppBarRoot>
     </>
   );

@@ -1,52 +1,48 @@
 // react
 import React from 'react';
 // mui icons
-import ConstructionIcon from '@mui/icons-material/Construction';
-import InfoIcon from '@mui/icons-material/Info';
-import TextSnippetIcon from '@mui/icons-material/TextSnippet';
-import WorkIcon from '@mui/icons-material/Work';
-import WorkspacesIcon from '@mui/icons-material/Workspaces';
+// import ConstructionIcon from '@mui/icons-material/Construction';
+// import InfoIcon from '@mui/icons-material/Info';
+// import TextSnippetIcon from '@mui/icons-material/TextSnippet';
+// import WorkIcon from '@mui/icons-material/Work';
+// import WorkspacesIcon from '@mui/icons-material/Workspaces';
 // type
 import { ButtonProps, IconProps } from '@mui/material';
 export interface NavLink {
   buttonProps?: ButtonProps;
   href: string;
-  Icon: React.ReactNode;
+  // Icon: React.ReactNode;
   label: string;
   order: number;
   sidebarOrder?: number;
   sidebarVisible?: boolean;
-  download: boolean;
 }
 
 const navLinks: NavLink[] = [
   {
     buttonProps: { color: 'info' },
     href: '/AboutMe',
-    Icon: <InfoIcon color="inherit" fontSize="inherit" />,
+    // Icon: <InfoIcon color="inherit"  />,
     label: 'O mně',
     order: 1,
     sidebarVisible: false,
-    download: false
   },
   {
     buttonProps: { color: 'info' },
     href: '/Portfolio',
-    Icon: <ConstructionIcon color="inherit" fontSize="inherit" />,
+    // Icon: <ConstructionIcon color="inherit" fontSize="inherit" />,
     label: 'Portfolio',
     order: 2,
     sidebarVisible: false,
-    download: false
   },
   {
     buttonProps: { color: 'info' },
     href: '/CuriculumVitae',
-    Icon: <TextSnippetIcon color="inherit" fontSize="inherit" />,
+    // Icon: <TextSnippetIcon color="inherit" fontSize="inherit" />,
     label: 'Životopis',
     order: 3,
     sidebarOrder: 2,
-    sidebarVisible: true,
-    download: false
+    sidebarVisible: false,
   },
   // {
   //   buttonProps: { color: 'info' },

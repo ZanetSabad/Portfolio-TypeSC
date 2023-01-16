@@ -14,7 +14,7 @@ const CustomButton: React.FunctionComponent<CustomButtonProps> = (props) => {
   const { children, ...otherProps } = props;
 
   return (
-    <CustomButtonRoot disableRipple {...otherProps}>
+    <CustomButtonRoot disableRipple {...otherProps}  >
       {children}
     </CustomButtonRoot>
   );
