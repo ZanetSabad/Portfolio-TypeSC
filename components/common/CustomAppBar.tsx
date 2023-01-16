@@ -18,17 +18,19 @@ import {
   ToolbarProps,
   styled,
   useTheme,
+  Typography,
 } from '@mui/material';
 // custom component
 // import NameLogo from 'components/common/NameLogo';
 import ButtonLink from './ButtonLink';
 import ButtonIcon from './ButtonIcon';
 import LinkDownload from "./LinkDownload"
+import ButtonHome from './HomeIconLink';
 // import MenuToggler from 'components/common/MenuToggler';
 import ConstantsContext from '../../context/constantsContext';
 import useOnClickOutside from '../../hooks/useOnClickOutside';
 import ComponentsContext from '../../context/componentsContext';
-// import FacebookIconLink from './FacebookIconLink';
+import HomeIconLink from './HomeIconLink';
 // import Projects from 'pages/projects';
 // type
 interface CustomAppBarProps {}
@@ -39,17 +41,18 @@ const CustomAppBarRoot = styled(AppBar)<AppBarProps>(({ theme }) => ({
 }));
 
 const LinkContainer = styled(Box)<BoxProps>(({ theme }) => ({
-    height: "70vh",
+    height: "80vh",
 //   marginLeft: theme.direction === 'ltr' ? 'auto' : 'none',
 //   marginRight: theme.direction === 'rtl' ? 'auto' : 'none',
 }));
 
 const LinksBox = styled(Box)<BoxProps>(({ theme }) => ({
-    height: "70vh",
+    height: "80vh",
     display: "flex", 
     flexDirection: "column",
     justifyContent: "space-evenly",
     alignItems: "center",
+    
 
   [theme.breakpoints.down('sm')]: {
     display: 'none',
@@ -58,6 +61,11 @@ const LinksBox = styled(Box)<BoxProps>(({ theme }) => ({
 
 const IconBox = styled(Box)<BoxProps>(({theme}) => ({
   textAlign: "center"
+}))
+
+const HomeBox = styled(Box)<BoxProps>(({theme}) => ({
+  textAlign: "center",
+  paddingTop: "2em"
 }))
 
 const CustomToolbar = styled(Toolbar)<ToolbarProps>(({ theme }) => ({
@@ -71,6 +79,7 @@ const CustomAppBar: React.FunctionComponent<CustomAppBarProps> = (props) => {
   const { containerMaxWidth = 'lg' } = React.useContext(ComponentsContext);
   const { navLinks } = React.useContext(ConstantsContext);
   navLinks?.sort((a, b) => (a.order > b.order ? 1 : -1));
+
   const { iconLinks } = React.useContext(ConstantsContext);
   iconLinks?.sort((a, b) => (a.order > b.order ? 1 : -1));
 
@@ -99,11 +108,12 @@ const CustomAppBar: React.FunctionComponent<CustomAppBarProps> = (props) => {
                     maxWidth="sm" 
                     sx={{
                         width: "300px", 
-                        height: "70vh",
+                        height: "90vh",
                         bgcolor: "primary.main",
                         borderRadius: "0.5em",
-                        marginTop: "5em", 
+                        marginTop: "2em", 
                         marginLeft: "5em",
+                        boxShadow: "10px 15px 15px black",
                         
                          }}>
           {/* <CustomToolbar sx={{ marginLeft: 'auto', border: "4px solid green",  width: "100%", height: "80vh" }}> */}
@@ -114,6 +124,9 @@ const CustomAppBar: React.FunctionComponent<CustomAppBarProps> = (props) => {
               onClick={() => router.push('/')}
             /> */}
             <LinkContainer >
+              <HomeBox>
+                <HomeIconLink />
+              </HomeBox>  
               <LinksBox>
                 {navLinks?.map((NavLink, index) => (
                   <ButtonLink
@@ -127,6 +140,7 @@ const CustomAppBar: React.FunctionComponent<CustomAppBarProps> = (props) => {
                 <LinkDownload />
 
                 <IconBox> 
+                  <Typography variant="h6" color="secondary">Follow me</Typography>
                 {iconLinks?.map((IconLink, index) => (
                   <ButtonIcon
                     key={IconLink.href}

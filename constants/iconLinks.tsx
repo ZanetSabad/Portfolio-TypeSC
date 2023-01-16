@@ -16,13 +16,13 @@ export interface IconLink {
 const iconLinks: IconLink[] = [
   {
     href: 'https://github.com/ZanetSabad',
-    Icon: <GitHubIcon color="info" fontSize="large" />,
+    Icon: <GitHubIcon color="info" fontSize="medium" />,
     order: 1,
     sidebarVisible: false,
   },
   {
     href: 'https://www.linkedin.com/feed/',
-    Icon: <LinkedInIcon color="info" fontSize="large" />,
+    Icon: <LinkedInIcon color="info" fontSize="medium" />,
     order: 2,
     sidebarVisible: false,
   }
