@@ -8,6 +8,7 @@ import ConstantsContext from '../context/constantsContext';
 import styles from "../styles/Home.module.css"
 // type
 import type { NextPage } from 'next';
+import HomePage from '../components/section/HomePage';
 
 const Home: NextPage = () => {
   const { pages } = React.useContext(ConstantsContext);
@@ -16,7 +17,7 @@ const Home: NextPage = () => {
     <>
      <div className={styles.myImg}>
         <MainLayout pageData={pages!.home}> 
-
+          <HomePage />
         
           
         </MainLayout>

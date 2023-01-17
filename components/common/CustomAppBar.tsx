@@ -65,7 +65,8 @@ const IconBox = styled(Box)<BoxProps>(({theme}) => ({
 
 const HomeBox = styled(Box)<BoxProps>(({theme}) => ({
   textAlign: "center",
-  paddingTop: "2em"
+  paddingTop: "2em",
+  
 }))
 
 const CustomToolbar = styled(Toolbar)<ToolbarProps>(({ theme }) => ({
@@ -112,8 +113,8 @@ const CustomAppBar: React.FunctionComponent<CustomAppBarProps> = (props) => {
                         bgcolor: "primary.main",
                         borderRadius: "0.5em",
                         marginTop: "2em", 
-                        marginLeft: "5em",
-                        boxShadow: "10px 15px 15px black",
+                        marginLeft: "3em",
+                        boxShadow: "0.3em 0.3em 1.5em black",
                         
                          }}>
           {/* <CustomToolbar sx={{ marginLeft: 'auto', border: "4px solid green",  width: "100%", height: "80vh" }}> */}
