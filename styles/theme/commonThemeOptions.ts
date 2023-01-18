@@ -24,6 +24,20 @@ const commonThemeOptions: ThemeOptions = {
         },
       },
     },
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          zIndex: "0"
+        },
+      },
+    },
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          color: "white"
+        },
+      },
+    },
   },
 };
 

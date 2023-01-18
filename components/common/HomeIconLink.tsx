@@ -19,7 +19,7 @@ interface HomeIconLinkProps extends IconButtonProps {
     | 'info'
     | 'success'
     | 'warning';
-  iconSize?: 'inherit' | 'large' | 'medium' | 'small' | undefined;
+
 }
 
 const HomeIconLink: React.FunctionComponent<HomeIconLinkProps> = (
@@ -29,13 +29,12 @@ const HomeIconLink: React.FunctionComponent<HomeIconLinkProps> = (
     anchorStyles,
     href = '/',
     iconColor = 'info',
-    iconSize = 'large',
     ...otherProps
   } = props;
 
   return (
     <IconButtonLink aria-label="Home button" href={href} {...otherProps}>
-      <HomeIcon color={iconColor} fontSize={iconSize} />
+      <HomeIcon color={iconColor} sx={{fontSize: "50px"}} />
     </IconButtonLink>
   );
 };

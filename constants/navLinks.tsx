@@ -23,7 +23,7 @@ const navLinks: NavLink[] = [
     buttonProps: { color: 'info' },
     href: '/AboutMe',
     // Icon: <InfoIcon color="inherit"  />,
-    label: 'O mně',
+    label: 'Kdo jsem',
     order: 1,
     sidebarVisible: false,
   },

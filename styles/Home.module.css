@@ -7,7 +7,8 @@
     background-repeat: no-repeat;
     background-size: contain; 
     background-attachment: fixed;
-    box-shadow: 10px 10px 15px black;
+    box-shadow: 10px 10px 15px #010D00;
     border-radius: 10px;
+    z-index: 0;
   }
   

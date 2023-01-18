@@ -10,21 +10,21 @@ const lightTheme = createTheme({
     mode: 'light',
     primary: {
       main: '#89345e',
-      light: '#89345e',
-      dark: '#B24531',
-      contrastText: '#111111',
+      // light: '#89345e',
+      // dark: '#B24531',
+      contrastText: '#010D00',
     },
     secondary: {
       main: '#45A9BF',
-      light: '#4DABF5',
-      dark: '#1769AA',
-      contrastText: 'black',
+      // light: '#4DABF5',
+      // dark: '#1769AA',
+      contrastText: '#010D00',
     },
     info: {
       main: '#010D00',
-      light: '#FFFFFF',
-      dark: '#B2B2B2',
-      contrastText: '#FF6347',
+      // light: '#FFFFFF',
+      // dark: '#B2B2B2',
+      // contrastText: '#FF6347',
     },
     background: {
       default: 'white',
@@ -33,8 +33,14 @@ const lightTheme = createTheme({
     text: {
       primary: '#010D00',
       secondary: '#45A9BF',
-      disabled: '#777777',
+      // disabled: '#777777',
     },
+  },
+  typography: {
+    fontFamily: [
+      'Inconsolata, monospace',
+    ].join (",")
+
   },
   components: {
     MuiCard: {

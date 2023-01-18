@@ -4,7 +4,6 @@ import * as React from 'react';
 import Head from 'next/head';
 // custom component
 import CustomAppBar from '../common/CustomAppBar';
-// import CustomAppBar from 'components/common/CustomAppBar';
 // import Footer from 'components/section/Footer';
 
 // type

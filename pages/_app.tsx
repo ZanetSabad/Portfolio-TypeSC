@@ -10,10 +10,10 @@ import NextNprogress from 'nextjs-progressbar';
 import ComponentsContext from '../context/componentsContext';
 import ConstantsContext from '../context/constantsContext';
 // style
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
+// import '@fontsource/roboto/300.css';
+// import '@fontsource/roboto/400.css';
+// import '@fontsource/roboto/500.css';
+// import '@fontsource/roboto/700.css';
 // import 'swiper/css';
 // import 'swiper/css/free-mode';
 // import 'swiper/css/navigation';

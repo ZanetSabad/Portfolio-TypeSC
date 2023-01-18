@@ -47,11 +47,12 @@ const LinkContainer = styled(Box)<BoxProps>(({ theme }) => ({
 }));
 
 const LinksBox = styled(Box)<BoxProps>(({ theme }) => ({
-    height: "80vh",
+    height: "70vh",
     display: "flex", 
     flexDirection: "column",
     justifyContent: "space-evenly",
     alignItems: "center",
+    fontSize: "20px",
     
 
   [theme.breakpoints.down('sm')]: {
@@ -141,7 +142,7 @@ const CustomAppBar: React.FunctionComponent<CustomAppBarProps> = (props) => {
                 <LinkDownload />
 
                 <IconBox> 
-                  <Typography variant="h6" color="secondary">Follow me</Typography>
+                  <Typography component="h6" variant="h5" color="secondary" fontWeight="600">Follow me</Typography>
                 {iconLinks?.map((IconLink, index) => (
                   <ButtonIcon
                     key={IconLink.href}

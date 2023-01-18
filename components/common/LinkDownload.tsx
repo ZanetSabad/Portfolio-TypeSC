@@ -20,7 +20,7 @@ const LinkDownload: React.FunctionComponent<LinkDownloadProps> = (props) => {
           download 
           target="_blank" 
           rel="noopener" 
-          underline="none">
+        >
       stáhnout životopis
     </LinkDownloadRoot>
   );

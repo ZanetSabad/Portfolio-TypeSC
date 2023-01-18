@@ -1,5 +1,5 @@
 // react
-import { red } from '@mui/material/colors';
+// import { red } from '@mui/material/colors';
 import * as React from 'react';
 // type
 interface CenterBoxProps extends React.CSSProperties {
@@ -12,11 +12,11 @@ const CenterBox: React.FunctionComponent<CenterBoxProps> = (props) => {
   return (
     <div
       style={{
-        border: "2px solid red",
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         height,
+        
         ...otherProps,
       }}
     >

@@ -7,7 +7,7 @@ interface CustomIconButtonProps extends IconButtonProps {}
 
 const CustomIconButtonRoot = styled(IconButton)<IconButtonProps>(
   ({ theme }) => ({
-    border: "2px solid black",
+    marginTop: "1em",
     boxShadow: "0.2em 0.2em 0.5em black",
     borderRadius: "0.5em",
   })
