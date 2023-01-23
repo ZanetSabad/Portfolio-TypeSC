@@ -4,12 +4,12 @@ import { Typography } from '@mui/material';
 import CustomAppBar from '../components/common/CustomAppBar';
 import CenterBox from '../components/common/CenterBox';
 
-const Portfolio = () => {
+const CuriculumVitae = () => {
     return(
         <>
         <CenterBox flexDirection='column'>
             <Typography align='center'>
-                Portfolio, moje, moje
+               Životopis
             </Typography>
             <CustomAppBar />
             </CenterBox>
@@ -17,4 +17,4 @@ const Portfolio = () => {
     )
 }
 
-export default Portfolio
+export default CuriculumVitae

@@ -10,6 +10,12 @@ import styles from "../styles/Home.module.css"
 import type { NextPage } from 'next';
 import HomePage from '../components/section/HomePage';
 import ShortStory from "../components/section/ShortStory"
+import Footer from '../components/section/Footer';
+import RecentProjects from '../components/section/RecentProject';
+// import SkillList from "../components/common/SkillList"
+
+
+
 
 const Home: NextPage = () => {
   const { pages } = React.useContext(ConstantsContext);
@@ -20,6 +26,11 @@ const Home: NextPage = () => {
         <MainLayout pageData={pages!.home}> 
           <HomePage />
           <ShortStory />
+          <RecentProjects />
+          <Footer />
+          
+          
+          
 
         
           

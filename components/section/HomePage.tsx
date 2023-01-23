@@ -14,10 +14,10 @@ import ButtonLink from '../common/ButtonLink';
 interface HomePageProps {}
 
 const HomePage: React.FunctionComponent<HomePageProps> = (props) => {
-  const {
-    palette: { info },
-  } = useTheme();
-  const router = useRouter();
+  // const {
+  //   palette: { info },
+  // } = useTheme();
+  // const router = useRouter();
 
   return (
     <> 
@@ -43,7 +43,7 @@ const HomePage: React.FunctionComponent<HomePageProps> = (props) => {
             </Typography>
          </Box>
         
-    <ButtonLink
+         <ButtonLink
             color="primary"
             href="/Portfolio"
             size="medium"
@@ -54,8 +54,7 @@ const HomePage: React.FunctionComponent<HomePageProps> = (props) => {
             Portfolio
           </ButtonLink>
           
-    </CenterBox>
-  
+      </CenterBox>
     </>
   );
 };

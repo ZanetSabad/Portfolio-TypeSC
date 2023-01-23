@@ -28,7 +28,7 @@ const lightTheme = createTheme({
     },
     background: {
       default: 'white',
-      paper: '#fff',
+      paper: '#89345e',
     },
     text: {
       primary: '#010D00',

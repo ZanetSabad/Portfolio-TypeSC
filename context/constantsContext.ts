@@ -5,13 +5,15 @@ import contactLinks from '../constants/contactLinks';
 import iconLinks from "../constants/iconLinks"
 import navLinks from '../constants/navLinks';
 import pages from "../constants/pages"
-// import projectsData, { Project } from 'constants/projectsData';
+
+import projectsData, { Project } from 'constants/projectsData';
 // import blogPosts from 'constants/blogPostsData';
 // // type
 import { ContactLink } from '../constants/contactLinks';
 import { IconLink } from "../constants/iconLinks"
 import { NavLink } from '../constants/navLinks';
 import { Pages } from '../constants/pages';
+
 
 // import { BlogPost } from 'types/blogPostType';
 
@@ -20,6 +22,8 @@ interface ContextProps {
   pages?: Pages;
   iconLinks?: IconLink[];
   contactLinks?: ContactLink[];
+
+  projects?: Project[];
 
 //   projects?: Project[];
 //   blogPosts?: BlogPost[];
@@ -30,7 +34,8 @@ const context: ContextProps = {
   pages,
   iconLinks,
   contactLinks,
-
+ 
+  projects: projectsData,
 //   projects: projectsData,
 //   blogPosts,
 };

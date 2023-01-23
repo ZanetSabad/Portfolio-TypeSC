@@ -11,7 +11,7 @@ const CustomButtonRoot = styled(Button)<ButtonProps>(({ theme, variant }) => ({
   fontSize: "1.3em",
   letterSpacing: "0.1em",
   '&: hover': {
-    backgroundColor: 'transparent',
+    backgroundColor: 'transition',
   }
 }));
 

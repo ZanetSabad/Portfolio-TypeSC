@@ -21,6 +21,7 @@ const commonThemeOptions: ThemeOptions = {
       styleOverrides: {
         text: {
             fontSize: "20px",
+            textDecoration: "none",
         },
       },
     },
