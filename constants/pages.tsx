@@ -12,12 +12,12 @@ export interface Page {
     home: {
       title: 'Žany',
       description:
-        'pages číslo 1',
+        'Úvodní stránka',
     },
-    projects: {
-      title: 'Projektyyyy',
+    aboutMe: {
+      title: 'Kdo jsem',
       description:
-        'Jak je*******stranka pages',
+        'Dovolte abych se představila',
     },
     hireMe: {
       title: 'jájáájá',

@@ -10,8 +10,8 @@ const lightTheme = createTheme({
     mode: 'light',
     primary: {
       main: '#89345e',
-      // light: '#89345e',
-      // dark: '#B24531',
+      light: '#89345e74',
+      dark: '#B24531',
       contrastText: '#010D00',
     },
     secondary: {
@@ -39,7 +39,17 @@ const lightTheme = createTheme({
   typography: {
     fontFamily: [
       'Inconsolata, monospace',
-    ].join (",")
+    ].join (","),
+    fontWeightLight: 300,
+    fontWeightRegular: 400,
+    fontWeightMedium: 500,
+    fontWeightBold:700,
+    h2: {
+      fontFamily: 'Inconsolata, monospace',
+      fontSize: "2.75em",
+      fontWeight: 700,
+      lineHeight: 55,
+    }
 
   },
   components: {

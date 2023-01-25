@@ -21,7 +21,6 @@ const commonThemeOptions: ThemeOptions = {
       styleOverrides: {
         text: {
             fontSize: "20px",
-            textDecoration: "none",
         },
       },
     },
@@ -35,7 +34,23 @@ const commonThemeOptions: ThemeOptions = {
     MuiPaper: {
       styleOverrides: {
         root: {
-          color: "white"
+          color: "white",
+          zIndex: "0",
+        },
+      },
+    },
+    // MuiButtonBase: {
+    //   styleOverrides: {
+    //     root: {
+    //         textDecoratiom: "none",
+    //     },
+    //   },
+    // },
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+            lineHeight: "2em",
+            textDecoration: "none",
         },
       },
     },

@@ -5,6 +5,7 @@ import { Button, ButtonProps, styled } from '@mui/material';
 // type
 interface CustomButtonProps extends ButtonProps {}
 
+
 const CustomButtonRoot = styled(Button)<ButtonProps>(({ theme, variant }) => ({
   fontWeight: 700,
   textTransform: 'uppercase',

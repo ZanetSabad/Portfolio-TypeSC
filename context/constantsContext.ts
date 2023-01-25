@@ -4,9 +4,8 @@ import * as React from 'react';
 import contactLinks from '../constants/contactLinks';
 import iconLinks from "../constants/iconLinks"
 import navLinks from '../constants/navLinks';
-import pages from "../constants/pages"
-
-import projectsData, { Project } from 'constants/projectsData';
+import pages from "../constants/pages";
+import skillsData, { Skill } from 'constants/skillsData';
 // import blogPosts from 'constants/blogPostsData';
 // // type
 import { ContactLink } from '../constants/contactLinks';
@@ -23,7 +22,7 @@ interface ContextProps {
   iconLinks?: IconLink[];
   contactLinks?: ContactLink[];
 
-  projects?: Project[];
+  skills?: Skill[];
 
 //   projects?: Project[];
 //   blogPosts?: BlogPost[];
@@ -33,11 +32,8 @@ const context: ContextProps = {
   navLinks,
   pages,
   iconLinks,
-  contactLinks,
- 
-  projects: projectsData,
-//   projects: projectsData,
-//   blogPosts,
+  contactLinks, 
+  skills: skillsData,
 };
 
 const ConstantsContext = React.createContext(context);

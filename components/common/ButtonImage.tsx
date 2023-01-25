@@ -1,7 +1,6 @@
 // react
 import * as React from 'react';
-// next
-import Image, { ImageProps } from 'next/image';
+import Image, { ImageProps } from "next/legacy/image";
 // import { Skeleton, useTheme } from '@mui/material';
 
 const ImageWithSkeleton: React.FunctionComponent<ImageProps> = (props) => {

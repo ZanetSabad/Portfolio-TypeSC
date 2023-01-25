@@ -4,7 +4,7 @@ import * as React from 'react';
 import { Container, ContainerProps } from '@mui/material';
 
 const CustomContainer: React.FunctionComponent<ContainerProps> = (props) => {
-  const { children, maxWidth = 'lg', ...otherProps } = props;
+  const { children, maxWidth = 'xl', ...otherProps } = props;
 
   return (
     <Container maxWidth={maxWidth} {...otherProps}>

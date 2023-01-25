@@ -2,28 +2,18 @@
 import * as React from 'react';
 // @mui
 import {
-  Box,
-  BoxProps,
   Card,
   CardProps,
-  CardContent,
-  CardContentProps,
   Typography,
   styled,
 } from '@mui/material';
-// custom component
 
-// custom context
-import ConstantsContext from 'context/constantsContext';
-// type
 interface FooterProps {}
 
 const CustomCard = styled(Card)<CardProps>(({ theme }) => ({
     backgroundColor: "primary.main",
-  margin: '1rem',
-  padding: '1rem',
   [theme.breakpoints.up('sm')]: {
-    margin: '2rem',
+    margin: '-2rem',
     padding: '2rem',
   },
 }));

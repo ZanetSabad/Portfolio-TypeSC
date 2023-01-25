@@ -15,14 +15,14 @@ import {
   Typography,
 } from '@mui/material';
 // custom component
-import ButtonLink from './ButtonLink';
-import ButtonIcon from './ButtonIcon';
-import LinkDownload from "./LinkDownload"
+import ButtonLink from '../common/ButtonLink';
+import ButtonIcon from '../common/ButtonIcon';
+import LinkDownload from "../common/LinkDownload"
 import ConstantsContext from '../../context/constantsContext';
 import useOnClickOutside from '../../hooks/useOnClickOutside';
-import HomeIconLink from './HomeIconLink';
+import HomeIconLink from '../common/HomeIconLink';
 // type
-interface CustomAppBarProps{}
+interface NavigationProps{}
 
 
 const CustomAppBarRoot = styled(AppBar)<AppBarProps>(({ theme }) => ({
@@ -56,7 +56,7 @@ const HomeBox = styled(Box)<BoxProps>(({theme}) => ({
   
 }))
 
-const CustomAppBar: React.FunctionComponent<CustomAppBarProps> = (props) => {
+const Navigation: React.FunctionComponent<NavigationProps> = () => {
   const [dropdownState, setDropdownState] = React.useState(false);
   const { navLinks } = React.useContext(ConstantsContext);
   navLinks?.sort((a, b) => (a.order > b.order ? 1 : -1));
@@ -128,4 +128,4 @@ const CustomAppBar: React.FunctionComponent<CustomAppBarProps> = (props) => {
   );
 };
 
-export default CustomAppBar;
+export default Navigation;

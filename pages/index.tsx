@@ -11,7 +11,8 @@ import type { NextPage } from 'next';
 import HomePage from '../components/section/HomePage';
 import ShortStory from "../components/section/ShortStory"
 import Footer from '../components/section/Footer';
-import RecentProjects from '../components/section/RecentProject';
+import SkillsProjects from '../components/section/Skills';
+import CustomAppBar from 'components/common/CustomAppBar';
 // import SkillList from "../components/common/SkillList"
 
 
@@ -24,9 +25,10 @@ const Home: NextPage = () => {
     <>
      <div className={styles.myImg}>
         <MainLayout pageData={pages!.home}> 
+          <CustomAppBar />
           <HomePage />
           <ShortStory />
-          <RecentProjects />
+          <SkillsProjects />
           <Footer />
           
           
