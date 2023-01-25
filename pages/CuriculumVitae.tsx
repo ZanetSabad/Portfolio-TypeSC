@@ -1,7 +1,7 @@
 // react
 import * as React from 'react';
 import { Typography } from '@mui/material';
-import CustomAppBar from '../components/common/CustomAppBar';
+import Navigation from '../components/section/Navigation';
 import CenterBox from '../components/common/CenterBox';
 
 const CuriculumVitae = () => {
@@ -11,7 +11,7 @@ const CuriculumVitae = () => {
             <Typography align='center'>
                Životopis
             </Typography>
-            <CustomAppBar />
+            <Navigation />
             </CenterBox>
         </>    
     )
