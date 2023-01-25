@@ -17,16 +17,16 @@ const contactLinks: ContactLink[] = [
   {
     buttonProps: { color: 'info' },
     order: 1,
-    Icon: <ContactPhoneIcon color="info" fontSize="large"/>,
-    label: "724831189",
-    href: "tel:+420724831189",
+    Icon: <ContactPhoneIcon color='info' fontSize='large'/>,
+    label: '724831189',
+    href: 'tel:+420724831189',
   },
   {
     buttonProps: { color: 'info' },
     order: 2,
-    Icon: <EmailIcon color="info" fontSize="large"/>,
-    label: "zaneta.sabadkova@email.com",
-    href: "mailto:zaneta.sabadkova@email.com",
+    Icon: <EmailIcon color='info' fontSize='large'/>,
+    label: 'zaneta.sabadkova@email.com',
+    href: 'mailto:zaneta.sabadkova@email.com',
   },
 ]
 

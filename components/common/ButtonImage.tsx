@@ -1,6 +1,6 @@
 // react
 import * as React from 'react';
-import Image, { ImageProps } from "next/legacy/image";
+import Image, { ImageProps } from 'next/legacy/image';
 // import { Skeleton, useTheme } from '@mui/material';
 
 const ImageWithSkeleton: React.FunctionComponent<ImageProps> = (props) => {
@@ -15,7 +15,7 @@ const ImageWithSkeleton: React.FunctionComponent<ImageProps> = (props) => {
       <Image alt={alt} onLoad={() => setIsLoaded(true)} {...otherProps} />
       {/* {!isLoaded && (
         <Skeleton
-          variant="rectangular"
+          variant='rectangular'
           sx={{
             backgroundColor: primary.light,
             borderRadius: '4px',

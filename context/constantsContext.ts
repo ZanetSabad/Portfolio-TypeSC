@@ -2,14 +2,14 @@
 import * as React from 'react';
 // data
 import contactLinks from '../constants/contactLinks';
-import iconLinks from "../constants/iconLinks"
+import iconLinks from '../constants/iconLinks'
 import navLinks from '../constants/navLinks';
-import pages from "../constants/pages";
+import pages from '../constants/pages';
 import skillsData, { Skill } from 'constants/skillsData';
 // import blogPosts from 'constants/blogPostsData';
 // // type
 import { ContactLink } from '../constants/contactLinks';
-import { IconLink } from "../constants/iconLinks"
+import { IconLink } from '../constants/iconLinks'
 import { NavLink } from '../constants/navLinks';
 import { Pages } from '../constants/pages';
 

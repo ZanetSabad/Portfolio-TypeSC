@@ -22,7 +22,7 @@ const ButtonLink: React.FunctionComponent<ButtonLinkProps> = (props) => {
   const { children, href = '#', ref, ...otherProps } = props;
 
   return (
-    <Link href={href} passHref target="_blank">
+    <Link href={href} passHref target='_blank'>
       <CustomButtonWithRef {...otherProps}>{children} </CustomButtonWithRef>
     </Link>
   );

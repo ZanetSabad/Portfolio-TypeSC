@@ -39,14 +39,14 @@ const lightTheme = createTheme({
   typography: {
     fontFamily: [
       'Inconsolata, monospace',
-    ].join (","),
+    ].join (','),
     fontWeightLight: 300,
     fontWeightRegular: 400,
     fontWeightMedium: 500,
     fontWeightBold:700,
     h2: {
       fontFamily: 'Inconsolata, monospace',
-      fontSize: "2.75em",
+      fontSize: '2.75em',
       fontWeight: 700,
       lineHeight: 55,
     }

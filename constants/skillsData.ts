@@ -1,4 +1,4 @@
-import { ImageProps } from "next/legacy/image";
+import { ImageProps } from 'next/legacy/image';
 
 
 export interface SkillDetails {
@@ -32,7 +32,7 @@ const SkillConstructor = (props: SkillDetails): Skill => {
 
 const skillsData: Skill[] = [
   SkillConstructor({
-    title: "Html",
+    title: 'Html',
     id: 1,
     images: [
       {
@@ -43,7 +43,7 @@ const skillsData: Skill[] = [
       },]
     }),
   SkillConstructor({
-    title: "CSS",
+    title: 'CSS',
     id: 2,
     images: [ 
       {
@@ -55,7 +55,7 @@ const skillsData: Skill[] = [
     ]
   }),
   SkillConstructor({
-    title: "JavaScript",
+    title: 'JavaScript',
     id: 3,
     images: [ 
       {
@@ -67,7 +67,7 @@ const skillsData: Skill[] = [
     ]
   }),
   SkillConstructor({
-    title: "SaSS",
+    title: 'SaSS',
     id: 4,
     images: [ 
       {
@@ -79,7 +79,7 @@ const skillsData: Skill[] = [
     ]
   }),
   SkillConstructor({
-    title: "Git",
+    title: 'Git',
     id: 5,
     images: [ 
       {
@@ -91,7 +91,7 @@ const skillsData: Skill[] = [
     ]
   }),
   SkillConstructor({
-    title: "GitHub",
+    title: 'GitHub',
     id: 6,
     images: [ 
       {
@@ -103,7 +103,7 @@ const skillsData: Skill[] = [
     ]
   }),
   SkillConstructor({
-    title: "Canva",
+    title: 'Canva',
     id: 7,
     images: [ 
       {
@@ -115,7 +115,7 @@ const skillsData: Skill[] = [
     ]
   }),
   SkillConstructor({
-    title: "Python",
+    title: 'Python',
     id: 8,
     images: [ 
       {
@@ -127,7 +127,7 @@ const skillsData: Skill[] = [
     ]
   }),
   SkillConstructor({
-    title: "Google Analytics",
+    title: 'Google Analytics',
     id: 9,
     images: [ 
       {
@@ -140,7 +140,7 @@ const skillsData: Skill[] = [
     ]
   }),
   SkillConstructor({
-    title: "SEO",
+    title: 'SEO',
     id: 10,
     images: [ 
       {
@@ -152,7 +152,7 @@ const skillsData: Skill[] = [
     ]
   }),
   SkillConstructor({
-    title: "ShotCut",
+    title: 'ShotCut',
     id: 11,
     images: [ 
       {
@@ -164,7 +164,7 @@ const skillsData: Skill[] = [
     ]
   }),
   SkillConstructor({
-    title: "Figma",
+    title: 'Figma',
     id: 12,
     images: [ 
       {

@@ -26,31 +26,31 @@ interface SkillCardProps extends CardProps {
 
 const CustomCard = styled(Card)<CardProps>(({ theme }) => ({
   img: {
-    borderRadius: "50%",
+    borderRadius: '50%',
     transition: 'all 1s linear',
-    clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+    clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)',
   },
   p: {
-    fontSize: "18px",
-    color: "transparent",
+    fontSize: '18px',
+    color: 'transparent',
     fontWeight: 700,
-    textAlign: "center"   
+    textAlign: 'center'   
    }, 
    
   '&: hover': {
     img: {
       transition: 'all 1s linear',
-      clipPath: "polygon(0 0, 100% 0, 100% 100%, 100% 0%)",
+      clipPath: 'polygon(0 0, 100% 0, 100% 100%, 100% 0%)',
     },
     p: {
-      color: "#45A9BF",
+      color: '#45A9BF',
       transition: 'all 1.5s linear',      
     },
   }, 
 }));
 
 const ImageContainer = styled(Box)<BoxProps>(({ theme }) => ({
-    height: "100%",
+    height: '100%',
 }));
 
 const SkillCard: React.FunctionComponent<SkillCardProps> = (props) => {
@@ -71,13 +71,13 @@ const SkillCard: React.FunctionComponent<SkillCardProps> = (props) => {
       </ImageContainer>
       
       <CardActions disableSpacing sx={{ 
-                              display: "flex", 
-                              color: "black",
+                              display: 'flex', 
+                              color: 'black',
                               }}>
-        <List sx={{width: "100%", height:"100%", position: "absolute", top:0, left:0}}>
-          <ListItem sx={{height: "100%"}}>
-            <ListItemText sx={{ display: "flex", justifyContent: "center"}}>
-              <Typography sx={{ zIndex: "0"}}>
+        <List sx={{width: '100%', height:'100%', position: 'absolute', top:0, left:0}}>
+          <ListItem sx={{height: '100%'}}>
+            <ListItemText sx={{ display: 'flex', justifyContent: 'center'}}>
+              <Typography sx={{ zIndex: '0'}}>
             {title}
             </Typography>
             </ListItemText>

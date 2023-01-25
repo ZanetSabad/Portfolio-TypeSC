@@ -7,10 +7,10 @@ interface CustomAnchorProps
   extends React.AnchorHTMLAttributes<HTMLAnchorElement> {}
 
 const Root = styled('a')({
-  // border: "2px solid red",
-  // marginLeft: "220px",
-  // width: "100px",
-  // height: "100px",
+  // border: '2px solid red',
+  // marginLeft: '220px',
+  // width: '100px',
+  // height: '100px',
   // position: 'absolute',
   // color: 'inherit',
   // textDecoration: 'none',

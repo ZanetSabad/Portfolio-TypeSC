@@ -1,7 +1,7 @@
 // react
 import React from 'react';
 // type
-import { ButtonProps, IconProps } from '@mui/material';
+import { ButtonProps } from '@mui/material';
 export interface NavLink {
   buttonProps?: ButtonProps;
   href: string;
@@ -12,19 +12,19 @@ export interface NavLink {
 const navLinks: NavLink[] = [
   {
     buttonProps: { color: 'info' },
-    href: '/AboutMe',
+    href: '/about-me',
     label: 'Kdo jsem',
     order: 1,
   },
   {
     buttonProps: { color: 'info' },
-    href: '/Portfolio',
+    href: '/portfolio',
     label: 'Portfolio',
     order: 2,
   },
   {
     buttonProps: { color: 'info' },
-    href: '/CuriculumVitae',
+    href: '/curiculumVitae',
     label: 'Životopis',
     order: 3,
   },

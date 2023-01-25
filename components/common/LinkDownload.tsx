@@ -6,8 +6,8 @@ import { Link, LinkProps, styled } from '@mui/material';
 interface LinkDownloadProps extends LinkProps {}
 
 const LinkDownloadRoot = styled(Link)<LinkDownloadProps>(({ theme, variant }) => ({
-      color: "white",
-      letterSpacing: "0.1em",
+      color: 'white',
+      letterSpacing: '0.1em',
       fontWeight: 700,  
 }));
 
@@ -16,10 +16,10 @@ const LinkDownload: React.FunctionComponent<LinkDownloadProps> = (props) => {
 
   return (
     <LinkDownloadRoot  {...otherProps} 
-          href="/docs/Zaneta_Sabadkova_CV.pdf" 
+          href='/docs/Zaneta_Sabadkova_CV.pdf' 
           download 
-          target="_blank" 
-          rel="noopener" 
+          target='_blank' 
+          rel='noopener' 
         >
       stáhnout životopis
     </LinkDownloadRoot>
@@ -62,8 +62,8 @@ export default LinkDownload;
 
 //   return (
     
-//     <Link   href="/docs/Zaneta_Sabadkova_CV.pdf" 
-//             target="_blank" 
+//     <Link   href='/docs/Zaneta_Sabadkova_CV.pdf' 
+//             target='_blank' 
 //             download             
 //             >
 //         stáhnout životopis

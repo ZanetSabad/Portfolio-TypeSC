@@ -20,37 +20,37 @@ const commonThemeOptions: ThemeOptions = {
     MuiButton: {
       styleOverrides: {
         text: {
-            fontSize: "20px",
+            fontSize: '20px',
         },
       },
     },
     MuiAppBar: {
       styleOverrides: {
         root: {
-          zIndex: "0"
+          zIndex: '0'
         },
       },
     },
     MuiPaper: {
       styleOverrides: {
         root: {
-          color: "white",
-          zIndex: "0",
+          color: 'white',
+          zIndex: '0',
         },
       },
     },
     // MuiButtonBase: {
     //   styleOverrides: {
     //     root: {
-    //         textDecoratiom: "none",
+    //         textDecoratiom: 'none',
     //     },
     //   },
     // },
     MuiTypography: {
       styleOverrides: {
         root: {
-            lineHeight: "2em",
-            textDecoration: "none",
+            lineHeight: '2em',
+            textDecoration: 'none',
         },
       },
     },

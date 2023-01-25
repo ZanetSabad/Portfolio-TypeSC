@@ -33,8 +33,8 @@ const HomeIconLink: React.FunctionComponent<HomeIconLinkProps> = (
   } = props;
 
   return (
-    <IconButtonLink aria-label="Home button" href={href} {...otherProps}>
-      <HomeIcon color={iconColor} sx={{fontSize: "50px"}} />
+    <IconButtonLink aria-label='Home button' href={href} {...otherProps}>
+      <HomeIcon color={iconColor} sx={{fontSize: '50px'}} />
     </IconButtonLink>
   );
 };
@@ -52,8 +52,8 @@ export default HomeIconLink;
 // interface LinkHomeProps extends LinkProps {}
 
 // const LinkHomeRoot = styled(Link)<LinkHomeProps>(({ theme, variant }) => ({
-//       color: "white",
-//       letterSpacing: "0.1em",
+//       color: 'white',
+//       letterSpacing: '0.1em',
 //       fontWeight: 700,  
 // }));
 

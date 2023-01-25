@@ -19,7 +19,7 @@ const MainLayout: React.FunctionComponent<MainLayoutProps> = (props) => {
         <Head>
           <title>{pageData.title ? pageData.title : 'No page title'}</title>
           {pageData.description && (
-            <meta name="description" content={pageData.description} />
+            <meta name='description' content={pageData.description} />
           )}
         </Head>
       )}

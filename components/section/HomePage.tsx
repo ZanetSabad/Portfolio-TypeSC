@@ -23,32 +23,32 @@ const HomePage: React.FunctionComponent<HomePageProps> = (props) => {
     <> 
      <CenterBox flexDirection='column'>
         <Box>
-        <Typography component="h1" variant="h3" sx={{marginBottom: "0.5em", textTransform: "uppercase", fontWeight: 600}} >
+        <Typography component='h1' variant='h3' sx={{marginBottom: '0.5em', textTransform: 'uppercase', fontWeight: 600}} >
             Jsem
         </Typography>
-        <Typography component="h1" variant="h2" fontWeight="bold" color="text.secondary" sx={{marginBottom: "0.5em", textTransform: "uppercase"}}>
+        <Typography component='h1' variant='h2' fontWeight='bold' color='text.secondary' sx={{marginBottom: '0.5em', textTransform: 'uppercase'}}>
             Žaneta Sabadková
         </Typography>
         </Box>
-        <Box flexDirection="column" 
-                  sx={{textAlign: "center"}}>
-            <Typography component="p" variant="h5" sx={{letterSpacing: "0.1em"}}>
+        <Box flexDirection='column' 
+                  sx={{textAlign: 'center'}}>
+            <Typography component='p' variant='h5' sx={{letterSpacing: '0.1em'}}>
                   začínající
             </Typography>
-            <Typography component="h6" variant="h5" sx={{letterSpacing: "0.3em", fontWeight: 700}}>
+            <Typography component='h6' variant='h5' sx={{letterSpacing: '0.3em', fontWeight: 700}}>
                   Front-end
             </Typography>
-            <Typography component="h6" variant="h5" sx={{letterSpacing: "0.3em", fontWeight: 700}}>
+            <Typography component='h6' variant='h5' sx={{letterSpacing: '0.3em', fontWeight: 700}}>
                   developer
             </Typography>
          </Box>
         
          <ButtonLink
-            color="primary"
-            href="/Portfolio"
-            size="medium"
-            sx={{ marginTop: '2rem', marginLeft: "15em" }}
-            variant="contained"
+            color='primary'
+            href='/Portfolio'
+            size='medium'
+            sx={{ marginTop: '2rem', marginLeft: '15em' }}
+            variant='contained'
             
           >
             Portfolio

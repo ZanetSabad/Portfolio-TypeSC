@@ -6,10 +6,10 @@ import MainLayout from 'components/layout/MainLayout';
 import type { NextPage } from 'next';
 // custom context
 import ConstantsContext from '../context/constantsContext';
-import CustomAppBar from '../components/common/CustomAppBar';
-import Footer from "../components/section/Footer"
-import TitleOnPage from "../components/section/TitleOnPage"
-import AboutMyText from "../components/section/AboutMyText"
+import Navigation from '../components/section/Navigation';
+import Footer from '../components/section/Footer'
+import TitleOnPage from '../components/section/TitleOnPage'
+import AboutMyText from '../components/section/AboutMyText'
 
 const CuriculumVitae: NextPage = () => {
     const { pages } = React.useContext(ConstantsContext);
@@ -18,11 +18,9 @@ const CuriculumVitae: NextPage = () => {
         <>
         <MainLayout pageData={pages!.aboutMe}>
             <TitleOnPage />
-            <AboutMyText />
-
-            
+            <AboutMyText />          
           
-            <CustomAppBar />
+            <Navigation />
         
             <Footer />
             </MainLayout>

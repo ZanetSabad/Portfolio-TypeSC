@@ -17,7 +17,7 @@ import {
 // custom component
 import ButtonLink from '../common/ButtonLink';
 import ButtonIcon from '../common/ButtonIcon';
-import LinkDownload from "../common/LinkDownload"
+import LinkDownload from '../common/LinkDownload'
 import ConstantsContext from '../../context/constantsContext';
 import useOnClickOutside from '../../hooks/useOnClickOutside';
 import HomeIconLink from '../common/HomeIconLink';
@@ -34,12 +34,12 @@ const LinkContainer = styled(Box)<BoxProps>(() => ({
 }));
 
 const LinksBox = styled(Box)<BoxProps>(({ theme }) => ({
-    height: "70vh",
-    display: "flex", 
-    flexDirection: "column",
-    justifyContent: "space-evenly",
-    alignItems: "center",
-    fontSize: "20px",    
+    height: '70vh',
+    display: 'flex', 
+    flexDirection: 'column',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    fontSize: '20px',    
 
   [theme.breakpoints.down('sm')]: {
     display: 'none',
@@ -47,12 +47,12 @@ const LinksBox = styled(Box)<BoxProps>(({ theme }) => ({
 }));
 
 const IconBox = styled(Box)<BoxProps>(({theme}) => ({
-  textAlign: "center"
+  textAlign: 'center'
 }))
 
 const HomeBox = styled(Box)<BoxProps>(({theme}) => ({
-  textAlign: "center",
-  paddingTop: "2em",
+  textAlign: 'center',
+  paddingTop: '2em',
   
 }))
 
@@ -73,17 +73,17 @@ const Navigation: React.FunctionComponent<NavigationProps> = () => {
 
   return (
     <>
-      <CustomAppBarRoot position="absolute" ref={appBarRef} >
+      <CustomAppBarRoot position='absolute' ref={appBarRef} >
         <Container  disableGutters 
-                    maxWidth="sm" 
+                    maxWidth='sm' 
                     sx={{
-                        width: "300px", 
-                        height: "90vh",
-                        bgcolor: "primary.main",
-                        borderRadius: "0.5em",
-                        marginTop: "2em", 
-                        marginLeft: "3em",
-                        boxShadow: "0.3em 0.3em 1.5em black",
+                        width: '300px', 
+                        height: '90vh',
+                        bgcolor: 'primary.main',
+                        borderRadius: '0.5em',
+                        marginTop: '2em', 
+                        marginLeft: '3em',
+                        boxShadow: '0.3em 0.3em 1.5em black',
                          }}>
             <LinkContainer >
               <HomeBox>
@@ -102,10 +102,10 @@ const Navigation: React.FunctionComponent<NavigationProps> = () => {
                 <LinkDownload />
 
                 <IconBox> 
-                  <Typography component="h6" 
-                              variant="h5" 
-                              color="secondary" 
-                              fontWeight="600"
+                  <Typography component='h6' 
+                              variant='h5' 
+                              color='secondary' 
+                              fontWeight='600'
                   >
                     Follow me
                   </Typography>

@@ -8,11 +8,11 @@ interface PageBoxProps extends React.CSSProperties {
 }
 
 const PageBox: React.FunctionComponent<PageBoxProps> = (props) => {
-  const {children, width="70vw", height = '100vh', ...otherProps } = props;
+  const {children, width='70vw', height = '100vh', ...otherProps } = props;
   return (
     <div
       style={{
-        textAlign: "center",
+        textAlign: 'center',
         marginLeft: 'ltr' ? 'auto' : 'none',
         height,    
         width,    

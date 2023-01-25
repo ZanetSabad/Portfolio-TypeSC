@@ -9,8 +9,8 @@ interface CustomButtonProps extends ButtonProps {}
 const CustomButtonRoot = styled(Button)<ButtonProps>(({ theme, variant }) => ({
   fontWeight: 700,
   textTransform: 'uppercase',
-  fontSize: "1.3em",
-  letterSpacing: "0.1em",
+  fontSize: '1.3em',
+  letterSpacing: '0.1em',
   '&: hover': {
     backgroundColor: 'transition',
   }

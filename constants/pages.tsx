@@ -22,7 +22,7 @@ export interface Page {
     hireMe: {
       title: 'jájáájá',
       description:
-        "pages číslo 2 ",
+        'pages číslo 2 ',
     },
   };
   

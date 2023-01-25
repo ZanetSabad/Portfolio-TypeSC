@@ -5,15 +5,15 @@ import MainLayout from 'components/layout/MainLayout';
 // custom context
 import ConstantsContext from '../context/constantsContext';
 //style
-import styles from "../styles/Home.module.css"
+import styles from '../styles/Home.module.css'
 // type
 import type { NextPage } from 'next';
 import HomePage from '../components/section/HomePage';
-import ShortStory from "../components/section/ShortStory"
+import ShortStory from '../components/section/ShortStory'
 import Footer from '../components/section/Footer';
 import SkillsProjects from '../components/section/Skills';
-import CustomAppBar from 'components/common/CustomAppBar';
-// import SkillList from "../components/common/SkillList"
+import Navigation from 'components/section/Navigation';
+// import SkillList from '../components/common/SkillList'
 
 
 
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
     <>
      <div className={styles.myImg}>
         <MainLayout pageData={pages!.home}> 
-          <CustomAppBar />
+          <Navigation />
           <HomePage />
           <ShortStory />
           <SkillsProjects />
