@@ -51,7 +51,7 @@ const AboutMyText: React.FunctionComponent<AboutMyTextProps> = () => {
                 </TextBox>
 
                 <Typography component='p' variant='subtitle1' sx={{marginTop:'2em'}}>
-                Mou nynější pracovní pozici lidé znají pod názvem rodičovská 'dovolená'.
+                Mou nynější pracovní pozici lidé znají pod názvem rodičovská dovolená.
                 Že bych se doma nudila? To rozhodně ne.
                 Co je náplní mé dosavadní práce a co mi přinesla?
                 Učím své děti mluvit, chodit, poznávat zvířátka. Učím je, jak se správně chovat...
@@ -106,7 +106,7 @@ const AboutMyText: React.FunctionComponent<AboutMyTextProps> = () => {
 
                 <Typography component='p' variant='subtitle1' sx={{marginTop:'2em'}}>
                 Považuji se za workoholičku. Jsem tvrdohlavá, energická. Velmi ambiciózní. Přátelská a empatická.
-                Mám nešvar, že když pracuji, potřebuji mít kolem sebe 'svůj pracovní chaos' a horkou kávu.
+                Mám nešvar, že když pracuji, potřebuji mít kolem sebe svůj pracovní chaos a horkou kávu.
                 Ráda čtu, i když na to, mi teď nezbývá tolik času.
                 </Typography>
 
