@@ -10,8 +10,7 @@ import {
 // custom component
 import PageBox from "../common/PageBox"
 // css
-import styles from "../../styles/components/AboutMyText.module.css"
-interface ShortStoryProps {}
+interface AboutMyTextProps {}
 
 const CustomContainer = styled(Box)<BoxProps>(({ theme }) => ({
     height: "70em",
@@ -28,7 +27,7 @@ const TextBox = styled(Box)<BoxProps>(({}) => ({
 
 }));
 
-const ShortStory: React.FunctionComponent<ShortStoryProps> = (props) => {
+const AboutMyText: React.FunctionComponent<AboutMyTextProps> = () => {
 
     return (
     <CustomContainer>
@@ -116,4 +115,4 @@ const ShortStory: React.FunctionComponent<ShortStoryProps> = (props) => {
   );
 };
 
-export default ShortStory;
+export default AboutMyText;
