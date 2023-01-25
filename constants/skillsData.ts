@@ -13,7 +13,7 @@ export interface Skill extends SkillDetails {
 }
 
 const SkillConstructor = (props: SkillDetails): Skill => {
-  const { images, id, title } = props;
+  const { images, id, title } = props
 
   return {
     id,
